@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>فرم ثبت نام</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="shape shape-one"></div>
+        <div class="shape shape-two"></div>
+        <div class="shape shape-three"></div>
+    </div>
+
+    <main class="container">
+
+        <form class="login-card" id="registerForm">
+
+            <div class="logo">✦</div>
+
+            <h1>به صفحه دیجیتال متین خوش آمدید</h1>
+
+            <p class="subtitle">
+                برای ساخت حساب کاربری، اطلاعاتت رو وارد کن.
+            </p>
+
+            <div class="input-group">
+                <label for="firstName">نام</label>
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="نام خود را وارد کنید"
+                    autocomplete="given-name"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">نام خانوادگی</label>
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="نام خانوادگی خود را وارد کنید"
+                    autocomplete="family-name"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="username">نام کاربری</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="یک نام کاربری انتخاب کنید"
+                    autocomplete="username"
+                    minlength="3"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="email">ایمیل</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">رمز عبور</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="حداقل ۸ کاراکتر"
+                    autocomplete="new-password"
+                    minlength="8"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                حساب تو بساز
+                <span>←</span>
+            </button>
+
+            <p class="message" id="message" aria-live="polite"></p>
+
+            <div class="footer">
+                یه بیست مون نشه؟
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
